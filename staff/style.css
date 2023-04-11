@@ -1,23 +1,29 @@
-#navbar .student-logo {
-    position: absolute;
-width: 83px;
-height: 83px;
-left: 958px;
-top: 37px;
-
+#mainheader{
+    display: flex;
+    justify-content: space-between;
+    background-color: transparent;
+    
 }
-
+#navbar{
+    display: flex;
+    justify-content: space-between;
+    
+    margin: 50px;
+}
+#navbar .stud-logo{
+    display: flex;
+    margin-right: 50px;
+    cursor: pointer;
+    
+}
 #navbar .staff-logo{
-    position: absolute;
-width: 72.2px;
-height: 83px;
-left: 1243px;
-top: 37px;}
-
-
+    display: flex;
+    cursor: pointer;
+}
+#navbar .stud-logo p,
 #navbar .staff-logo p{
     font-size: 25px;
-    color: white;
+    color: rgb(127, 125, 125);
     background-color: black;
     height: 40px;
     width: 200px;
@@ -28,104 +34,30 @@ top: 37px;}
     font-weight: 900;
     margin-left: -30px;
 }
-
-#list-staff{
-position: absolute;
-width: 92%;
-height: 80%;
-left: 130px;
-top: 130px;
-
-
-
+#navbar .stud-logo p:hover,
+#navbar .staff-logo p:hover{
+    color: white;
 }
-#list-staff .stafflist2{
+#so{
+    background: #CDCFEE;
+    height: 100vh;
+    width: 90%;
     display: flex;
+    flex-wrap: wrap;
+    margin: 100px;
     justify-content: space-between;
+    box-shadow:  0px 0px 40px 40px #CDCFEE;
+    display: flex;
+}
+    
+  
+#so .cont{
     position: relative;
-    background-image: url(img/Rectangle\ 45.png);
-}
-
-#list-staff .stafflist2 .frame1{
-
-position: absolute;
-top: 0;
-left: 0;
-
-}
-#list-staff .stafflist2 .frame2{
-
-    position: absolute;
-    left: 80px;
-    top:50px
-
-    }
-    #list-staff .stafflist2 .staff-pic{
-        position: absolute;
-        left: 100px;
-        top: 125px;
-    }
-    #list-staff .stafflist2 .name{
-
-        position: absolute;
-        left: 100px;
-        top: 290px;
-        background-color: #E0C667;
-        height: 40px;
-        font-size: 30px;
-    }
-
-
-    #list-staff .stafflist2{
-        display: flex;
-        justify-content: space-between;
-        position: relative;
-        background-image: url(img/Rectangle\ 45.png);
-    }
-
-    #list-staff .stafflist2 .frame1{
-
-    position: absolute;
-    top: 0;
-    left: 0;
-
-    }
-    #list-staff .stafflist2 .frame2{
-
-        position: absolute;
-        left: 80px;
-        top:50px
-
-        }
-        #list-staff .stafflist2 .staff-pic{
-
-            position: absolute;
-            left: 100px;
-            top: 125px;
-        }
-        #list-staff .stafflist2 .name{
-
-            position: absolute;
-            left: 100px;
-            top: 290px;
-            background-color: #E0C667;
-            height: 40px;
-            font-size: 30px;
-        }
-#s{
-    position: absolute;
-width: 92%;
-height: 80%;
-left: 130px;
-top: 130px;
-background-color: #CDCFEE;
-
-}
-#s .cont{
-    background-color: green;
-    position: relative;
-    left: 130px;
-top: 130px;
+    width:100px;
+    height:100px;
+    margin:0 300px;
+    padding: 100px;
+    
 }
 #so .cont .f1{
     position: absolute;
@@ -153,11 +85,10 @@ top: 130px;
     font-size: 30px;
     width: 150px;
     text-align: center;
-
+        
 }
-
-
-
+        
+    
 #st{
     background: #CDCFEE;
     height: 100vh;
@@ -167,25 +98,22 @@ top: 130px;
     margin: 100px;
     justify-content: space-between;
     box-shadow:  0px 0px 40px 40px #CDCFEE;
-
+    display: none;
+    
 }
-
-
+  
+  
 #st .cont{
-    box-sizing: border-box;
-
-position: absolute;
-left: 0%;
-right: 0%;
-top: 0%;
-bottom: 0%;
-border: 7px solid #E0C667;
-
+    position: relative;
+    width:100px;
+    height:100px;
+    margin:0 300px;
+    padding: 100px;
+    
 }
-
 #st .cont .f1{
     position: absolute;
-
+    
 }
 #st .cont .f2{
     position: absolute;
@@ -211,3 +139,53 @@ border: 7px solid #E0C667;
     text-align: center;
 
 }
+
+
+    /*----------------------------------------------------responsive-------------------------*/
+
+    @media(max-width:1000px){
+        #loginbox{
+            width: 300px;
+            height: 500px;
+        }
+        #loginbox .fieldbox input{
+            width: 300px;
+            height: 30px;
+            font-size: 20px;
+
+        }
+        #loginbox button {
+            width: 350px;
+            height: 60px;
+            margin-top: 20px;
+        }
+        #logo img{
+            width: 150px;
+            height: 80px;
+        }
+        #navbar .stud-logo img,
+        #navbar .staff-logo img{
+
+            display: none;
+        }
+        #navbar .stud-logo p, #navbar .staff-logo p {
+
+            width: 100px;
+
+        }
+        #navbar{
+            margin: 10px;
+        }
+        #st{
+            width: 300px;
+            height: 100vh;
+        }
+        #st .cont{
+            position: relative;
+
+            width:100px;
+            height:100px;
+            margin:50px -70px;
+            padding: 100px ;
+        }
+    }
